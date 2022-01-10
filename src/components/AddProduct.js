@@ -1,9 +1,10 @@
 import React from "react";
 import ProductForm from './ProductForm'
 
-const AddProduct = () => {
+const AddProduct = ({history, products, setProducts}) => {
     const handleOnSubmit = (product) => {
-        console.log(product)
+        setProducts([product, ...products])
+        history.push('/');
     }
 
     return (

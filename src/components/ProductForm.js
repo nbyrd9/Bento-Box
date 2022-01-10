@@ -3,10 +3,12 @@ import { Form, Button } from 'react-bootstrap';
 import { v4 as uuidv4 } from 'uuid';
 
 const ProductForm = (props) => {
-    const [product, setProduct] = useState({
+    const [product, setProduct] = useState(() => {
+      return {
         productname: props.product ? props.product.productname : '',
         price: props.product ? props.product.price : '',
         description: props.product ? props.product.description : ''
+      }
     })
 
     const [errorMsg, setErrorMsg] = useState('');
@@ -71,7 +73,7 @@ const handleInputChange = (event) => {
           />
           </Form.Group>
         <Form.Group controlId="price">
-          <Form.Label>Price</Form.Label>
+          <Form.Label>Price (in $)</Form.Label>
           <Form.Control
             className="input-control"
             type="number"

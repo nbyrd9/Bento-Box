@@ -86,6 +86,14 @@ h2 {
   .product-name {
     font-weight: bold;
   }
+
+  .product-details {
+    margin-bottom: 1rem;
+
+    & > div {
+      margin-bottom: 0.5rem;
+    }
+  }
 }
 
 .main-form {
