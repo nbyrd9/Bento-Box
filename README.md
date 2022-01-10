@@ -5,9 +5,9 @@ BentoBox is your one stop shop for everything that you need! Keep track of your 
 ## Installation Instructions
 Fork and clone this repository. If needed, install the necessary dependencies using:
 
-### `yarn add bootstrap@4.6.0 lodash@4.17.21 react-bootstrap@1.5.2 node-sass@4.14.1 react-router-dom@5.2.0 uuid@8.3.2`
+```yarn add bootstrap@4.6.0 lodash@4.17.21 react-bootstrap@1.5.2 node-sass@4.14.1 react-router-dom@5.2.0 uuid@8.3.2```
 
-*If you recieve an error regarding node version incompatability, run this code in your terminal*
+*If you recieve an error regarding node version incompatability, run this code in your terminal:*
 ### `yarn install --ignore-engines`
 
 
