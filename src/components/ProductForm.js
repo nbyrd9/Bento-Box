@@ -6,7 +6,7 @@ const ProductForm = (props) => {
     const [product, setProduct] = useState({
         productname: props.product ? props.product.productname : '',
         price: props.product ? props.product.price : '',
-        description: props.product ? props.product.description
+        description: props.product ? props.product.description : ''
     })
 
     const [errorMsg, setErrorMsg] = useState('');
@@ -48,7 +48,7 @@ const handleInputChange = (event) => {
         }
         break;
       default:
-        setProduct(prevState) => ({
+        setProduct((prevState) => ({
           ...prevState,
           [name]: value
         }));

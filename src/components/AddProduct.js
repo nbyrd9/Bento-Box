@@ -2,7 +2,7 @@ import React from "react";
 import ProductForm from './ProductForm'
 
 const AddProduct = () => {
-    const handleOnSubmit = (prodcut) => {
+    const handleOnSubmit = (product) => {
         console.log(product)
     }
 
