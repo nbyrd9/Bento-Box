@@ -33,7 +33,7 @@ const ProductForm = (props) => {
         }
         props.handleOnSubmit(product)
     } else {
-        errorMsg = 'Please fill out all the fields.';
+        errorMsg = 'Please fill out each field.';
     }
     setErrorMsg(errorMsg);
 };
