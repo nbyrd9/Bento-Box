@@ -15,7 +15,7 @@ const Product = ({
           <Card.Body>
             <Card.Title className="product-name">{productname}</Card.Title>
             <div className="product-details">
-              <div>Price: {price} </div>
+              <div>Price: ${price} </div>
               <div>Description: {description} </div>
               
             </div>

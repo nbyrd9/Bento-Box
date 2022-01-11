@@ -76,7 +76,7 @@ const handleInputChange = (event) => {
           <Form.Label>Price (in $)</Form.Label>
           <Form.Control
             className="input-control"
-            type="number"
+            type="text"
             name="price"
             value={price}
             placeholder="Enter Price"
